@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  
+
+  
+  
+  <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEy44iqpBgjcOjMiuVQBneh50E_zT4QOY&libraries=visualization"></script>
+<script src="http://localhost/jquery-2.2.3.js"></script>
+
+<script src="http://localhost/demo_site.js"></script>
+</head> 
+<link rel="stylesheet" type="text/css" href="demo_site.css">
+<body>
+
+</td></tr></table>
+
+<table><tr><td>
+
+  <div id="map"></div>
+</td><td>
+<img id="dnn_imgLogo" src="LogoEnviroment.jpg" style="border-width:0px;" />
+<img id="dnn_imgLogo" src="Logo1280.jpg" style="border-width:0px;" />
+
+<div class="radiob">
+  <input type="radio" id="radio1" name="formep" value="bul1"> 
+  <label for ="radio1">Επιλογή συγκεκριμένης ώρας  </label> 
+  <input type="radio" id="radio2" name="formep" value="bul2">
+  <label for ="radio2">Επιλογή χρονικού διαστήματος</label> 
+</div>
+  
+  
+    <form id="bullet2_form">
+    <legend></legend>
+          <select name="id" id="onoma2"><option value="all">Όλοι οι σταθμοί</option></select><br>
+          <select name="rypos"><option>Τύπος Ρύπου</option>
+          <option value="co"> Μονοξείδιο του άνθρακα</option>
+          <option value="no"> Οξείδια του αζώτου</option>
+          <option value="o" > Όζον</option>
+          <option value="so"> Διοξείδιο του θείου</option>
+          <option value="ch"> Βενζόλιο</option>
+        </select><br>
+          <input name="datetime" type="datetime" placeholder="0000-00-00-00"><br>
+          <input name="submit" type="submit" value="Εμφάνιση αποτελέσματος"><br>
+    </form>
+
+<form id="bullet3_form">
+    <legend></legend>
+      <select name="id" id="onoma3"><option value="all">Όλοι οι σταθμοί</option></select><br>
+      <select name="rypos"><option>Τύπος Ρύπου</option>
+        <option value="co"> Μονοξείδιο του άνθρακα</option>
+        <option value="no"> Οξείδια του αζώτου</option>
+        <option value="o" > Όζον</option>
+        <option value="so"> Διοξείδιο του θείου</option>
+        <option value="ch"> Βενζόλιο</option>
+      </select><br>
+      <input type="datetime" name="date1" placeholder="YYYY-MM-DD-HH* date1"><br>
+      <input type="datetime" name="date2" placeholder="YYYY-MM-DD-HH* date2"><br>
+      <input type="submit" name="submit3" value="Εμφάνιση αποτελέσματος">
+</form>
+</td></tr></table>
+
+<div class="cop">&copy Copyright 2016</div>
+
+</body>
+</html>

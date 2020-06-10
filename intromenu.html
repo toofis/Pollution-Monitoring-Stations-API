@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<link rel="stylesheet" type="text/css" href="intromenu.css">	
+<script src="jquery-2.2.3.js"></script>
+<script src="intromenu.js"></script>
+
+<body>
+
+<table><tr><td>
+<h2 id="sundesh">Σύνδεση στο σύστημα διαχείρησης του web api</h2><br><br>
+</td>
+</tr>
+<tr align="center">
+<td>
+<form class="log" id="login_form">
+<legend>Login</legend>  
+    <input type="text" name="email" placeholder="Email"><br>
+    <input type="password" name="password"  placeholder="Password"><br>
+    <input type="submit" name="login_submit" value="Login">  
+</form>
+<div id="login_err"></div><br>
+
+<form class="log" id="signup_form">
+<legend>Sign up</legend>  
+	<input type="text" id="email" name="email" placeholder = "Email"><br>
+    <input type="password" id="password"  placeholder = "Password"><br>
+	<input type="password" id="conf_password"  placeholder = "Confirm Password"><br>
+	<input type="submit" name="submit" value="Sign up">  
+</form>
+<button class="return" id="return">Επιστροφή</button>
+
+<div id="signup_err"></div>
+
+
+<button id="account">Δημιουργία λογαριασμού</button> <br>
+</td></tr></table>
+
+</body>
+</html>

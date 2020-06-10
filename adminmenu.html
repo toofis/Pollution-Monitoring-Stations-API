@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+ 	<link rel="stylesheet" type="text/css" href="menu.css">	
+ 	<script src="jquery-2.2.3.js"></script>
+	<script src="adminmenu.js"></script>
+
+</head>
+
+<body>
+
+
+	<table><tr><td>
+	   <div class="menu" id="message"></div>	 
+	</td><td></td><td align="right"> 
+	
+
+			<button class="menu" id="logout">log out</button><br><br>
+	</td></tr>
+
+	<tr><td>
+		<button class="menu" id="in_st_button">Προσθήκη σταθμού</button>
+
+		<form name="in_st_form" id="in_st_form">  
+		<legend>Επιλογή στοιχείων σταθμού</legend>
+		  <input type="text"   name="id"    placeholder="ID">
+		  <input type="text"   name="onoma" placeholder="Όνομα"><br>
+		  <input type="text"   name="geogm" placeholder="Γεωγραφικό μήκος">
+		  <input type="text"   name="geogp" placeholder="Γεωγραφικό πλάτος"><br>
+ 		  <input type="submit" name="submit" value="Προσθήκη σταθμού">
+ 		</form> 
+		<button class="return" id="return_inst">Επιστροφή</button>
+ 		<div id="in_st_mes"> </div>
+	</td><td>
+
+
+<button class="menu" id="in_csv_button">Προσθήκη αρχείου μετρήσεων</button>
+
+<form name="in_csv_form" id="in_csv_form" action="insert_csv.php" method="post" enctype="multipart/form-data">
+   <select name="onomac" id="onoma"><option>Σταθμός</option></select><br>
+			 <select name="etosc" id="etos"></select><br>
+			 <select name="ryposc"><option>Τύπος Ρύπου</option>
+				<option value="co"> Μονοξείδιο του άνθρακα</option>
+				<option value="no"> Οξείδια του αζώτου</option>
+				<option value="o" > Όζον</option>
+				<option value="so"> Διοξείδιο του θείου</option>
+				<option value="ch"> Βενζόλιο</option>
+			 </select><br>
+    <input type="file" name="fileToUpload" id="fileToUpload"><br>
+    <input type="submit" value="Προσθήκη μετρήσεων" name="submit">
+</form>
+<button class="return" id="return_incsv">Επιστροφή</button>
+    
+
+	</td><td>
+
+		<button class="menu" id="del_st_button">Διαγραφή σταθμού</button>
+
+		<form id="del_st_form" name="de_st_form">
+			<legend>Επιλογή σταθμού</legend>
+			 <select name="id" id="onomad"><option>Σταθμός</option></select><br>
+			 <input type="submit" name="submit" value="Διαγραφή σταθμού">  
+		</form>
+		<button class="return" id="return_delst">Επιστροφή</button>
+		 
+	</td></tr>
+
+
+
+	<br>
+
+
+
+	<tr><td>
+
+
+		<button class="menu" id="bullet1">Εμφάνιση σταθμών</button>
+ 		<div id='bullet1_res'></div> 
+        <button class="return" id="return_bullet1">Επιστροφή</button>
+
+
+	</td><td>
+
+
+		<button class="menu" id="bullet2">Εμφάνιση τιμής ρύπου</button>
+		<form id="bullet2_form">
+		<legend>Παράμετροι αναζήτησης</legend>
+		      <select name="id" id="onoma2"></select><br>
+		      <select name="rypos"><option>Τύπος Ρύπου</option>
+					<option value="co"> Μονοξείδιο του άνθρακα</option>
+					<option value="no"> Οξείδια του αζώτου</option>
+					<option value="o" > Όζον</option>
+					<option value="so"> Διοξείδιο του θείου</option>
+					<option value="ch"> Βενζόλιο</option>
+			  </select><br>
+		      <input name="datetime" type="datetime" placeholder="YYYY-MM-DD HH"><br>
+		      <input name="submit" type="submit" value="Εμφάνιση αποτελέσματος"><br>
+		</form>
+		<div class="results" id='bullet2_res'> </div> 
+        <button class="return" id="return_bullet2">Επιστροφή</button>
+
+
+	</td><td>
+
+
+		<button class="menu" id="bullet3">Εμφάνιση μέσου όρου και τυπικής απόκλισης</button>
+		<form id="bullet3_form">
+		<legend>Παράμετροι αναζήτησης</legend>
+		  <select name="id" id="onoma3"></select>
+		  <select name="rypos"><option>Τύπος Ρύπου</option>
+				<option value="co"> Μονοξείδιο του άνθρακα</option>
+				<option value="no"> Οξείδια του αζώτου</option>
+				<option value="o" > Όζον</option>
+				<option value="so"> Διοξείδιο του θείου</option>
+				<option value="ch"> Βενζόλιο</option>
+		  </select><br>
+		  <input type="datetime" name="date1" placeholder="Αρχική Ημερομηνία">
+		  <input type="datetime" name="date2" placeholder="Τελική Ημερομηνία"><br>
+		  <input type="submit" name="submit3" value="Εμφάνιση αποτελέσματος">
+		</form>
+		<div class="results" id="bullet3_res"></div> 
+		<button class="return" id="return_bullet3">Επιστροφή</button>
+  
+	</td></tr></table>
+ 
+	<br><br>
+    <div class="stats" id="stats1"></div> 
+    <div class="stats" id="stats3"></div>
+    <div class="stats" id="stats2"></div>
+
+
+</body>
+</html>

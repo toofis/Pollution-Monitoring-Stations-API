@@ -1,0 +1,148 @@
+html, body {
+    height: 80%;
+    align: left;
+background-color: #468A66;
+}
+
+html {
+    display: table;
+    margin: left;
+}
+
+body {
+	margin: 0 0 30px; 
+    padding: 25px;
+    display: table-cell;
+    vertical-align: left;
+}
+
+
+
+
+th, td {
+    padding: 8px;
+    align: left;
+    text-align: left;
+}
+
+#map{
+    
+    width:800px;
+    height:500px;
+}
+
+button {
+    background-color: #1C5737;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.return {
+    background-color: #1C5737;
+    border: none;
+    color: white;
+    padding: 11px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+input[type=text] {
+    background-color: #e6ffe6;
+    border: none;
+    color: #001a00;
+    padding: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=datetime] {
+    background-color: #e6ffe6;
+    border: none;
+    width: 162px;
+    color: #001a00;
+    padding: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+select {
+    background-color: #e6ffe6;
+    border: none;
+    width: 200px;
+    color: #001a00;
+    padding: 9px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    border-color:#001a00;
+}
+
+input[type=submit] {
+   background-color: #1C5737;
+    border: none;
+    color: white;
+    width: 250px;
+    padding: 11px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.radiob input[type="radio"] {
+    display:none;
+    width: 50px;
+}
+
+.radiob label {
+	width: 100px;
+    display:inline-block;
+    background-color:#1C5737;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cop {
+	position: fixed;
+	 bottom: 0;
+	 right:0;
+	 font-size: 12px;
+	}
+

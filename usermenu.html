@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="jquery-2.2.3.js"></script>
+<script src="usermenu.js"></script>
+<link rel="stylesheet" type="text/css" href="menu.css">	
+
+</head>
+
+
+
+	<table><tr><td>
+	   <div class="menu" id="message"></div>	 
+	</td><td></td>
+	<td> 
+			<button class="menu" id="logout">log out</button><br><br>
+	</td></tr>
+
+ 
+ <tr><td>
+
+<button class="menu" id="bullet1">Εμφάνιση σταθμών</button>
+<div id='bullet1_res'> </div> <br>
+<button class="return" id="return_bullet1">Επιστροφή</button>
+
+	</td><td>
+
+
+<button class="menu" id="bullet2">Εμφάνιση τιμής ρύπου</button>
+
+		<form id="bullet2_form">
+		<legend>Παράμετροι αναζήτησης</legend>
+		      <select name="id" id="onoma2"></select><br>
+		      <select name="rypos"><option>Τύπος Ρύπου</option>
+					<option value="co"> Μονοξείδιο του άνθρακα</option>
+					<option value="no"> Οξείδια του αζώτου</option>
+					<option value="o" > Όζον</option>
+					<option value="so"> Διοξείδιο του θείου</option>
+					<option value="ch"> Βενζόλιο</option>
+			  </select><br>
+		      <input name="datetime" type="datetime" placeholder="0000-00-00-00"><br>
+              <input name="submit" type="submit" value="Εμφάνιση αποτελέσματος"><br>
+		</form>
+<div id='bullet2_res'> </div> <br>
+<button class="return" id="return_bullet2">Επιστροφή</button>
+
+
+	</td><td>
+
+
+<button class="menu" id="bullet3">Εμφάνιση μέσου όρου και τυπικής απόκλισης</button>
+		
+		<form id="bullet3_form">
+		<legend>Παράμετροι αναζήτησης</legend>
+		  <select name="id" id="onoma3"></select><br>
+		  <select name="rypos"><option>Τύπος Ρύπου</option>
+				<option value="co"> Μονοξείδιο του άνθρακα</option>
+				<option value="no"> Οξείδια του αζώτου</option>
+				<option value="o" > Όζον</option>
+				<option value="so"> Διοξείδιο του θείου</option>
+				<option value="ch"> Βενζόλιο</option>
+		  </select><br>
+		  <input type="datetime" name="date1" placeholder="YYYY-MM-DD-HH* date1"><br>
+		  <input type="datetime" name="date2" placeholder="YYYY-MM-DD-HH* date2"><br>
+		  <input type="submit" name="submit3" value="Εμφάνιση αποτελέσματος">
+		</form>
+
+<div id="bullet3_res"></div> <br>
+<button class="return" id="return_bullet3">Επιστροφή</button>
+
+</td></tr></table>
+
+<div id="user_stats" class="stats"></div> <br>
+
+
+
+</body>
+</html>
